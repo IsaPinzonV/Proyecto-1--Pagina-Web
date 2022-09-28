@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Aboreto&display=swap");
+
+.navbar {
+  background-color: rgb(247, 247, 247);
+}
+
+.navbar-item {
+  font-family: "Poppins", sans-serif;
+  color: rgb(0, 0, 0);
+  font-size: 15px;
+  font-weight: 200;
+  padding: 15px;
+}
+
+.title {
+  width: 100%;
+  height: 145px;
+  border-bottom: 0.5px solid rgb(222, 222, 222);
+}
+
+.logo-brand {
+  padding-top: 45px;
+  display: flex;
+  justify-content: center;
+}
+
+.brand-name {
+  font-family: "Aboreto", cursive;
+  color: rgb(0, 0, 0);
+  font-size: 40px;
+}
+
+.secondnav-menu {
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  font-family: "Poppins", sans-serif;
+  color: rgb(0, 0, 0);
+  font-size: 15px;
+  font-weight: 200;
+  height: 70px;
+  padding-bottom: 22px;
+}
+
+.columns {
+  font-family: "Poppins", sans-serif;
+  color: rgb(0, 0, 0);
+  font-size: 15px;
+  font-weight: 300;
+  padding: 15px;
+
+}
+
+.column {
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  color: rgb(0, 0, 0);
+  
+}
+
+.column:hover {
+	font-weight: 500;
+}
+
+.branding {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.branding-prod {
+  width: 1300px;
+  height: 300px;
+  background-color: rgb(255, 249, 249);
+  display:flex;
+  flex-direction: row;
+}
+
+.branding-prod{
+    background-image:url("src/bg-bottle.png") ;
+    background-size: 1300px 300px;
+}
+
+.column-left{
+    width: 650px;
+    height: 300px;
+}
+
+.column-right{
+    padding-top: 100px;
+    width: 650px;
+    height: 100px;
+
+}
+
+.h2{
+    font-family: "Aboreto", cursive;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    font-weight: 200;
+}
+
+.subtitle{
+    font-family: "Aboreto", cursive;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+}
+
+.description{
+    width: 300px;
+    font-family: "Poppins", sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    font-weight: 200;
+}
+
+.tertnav{
+    font-family: "Poppins", sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    font-weight: 400;
+
+    display:flex;
+    flex-direction: row;
+
+}
+.tertnav-start{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content:left;
+    align-items:flex-end;
+    padding-bottom: 10px;
+    border-bottom: 0.5px solid rgb(222, 222, 222);
+}
+
+.tertnav-end{
+    display: flex;
+    justify-content:right;
+    align-items:flex-end;
+    padding-bottom: 10px;
+    border-bottom: 0.5px solid rgb(222, 222, 222);
+}
