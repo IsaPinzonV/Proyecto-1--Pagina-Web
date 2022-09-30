@@ -318,11 +318,15 @@
   width: 400px;
 }
 
-.olive-bottle {
+.olive-bottle-web {
   width: 100%;
   height: 450px;
   display: flex;
   flex-direction: row;
+}
+
+.olive-bottle-mobile{
+display: none;
 }
 
 .description-left {
@@ -691,6 +695,149 @@ padding-right: 60px;
 }
 
 .coll-tags{
+  display: none;
+}
+
+.last-collect {
+  height: 520px;
+}
+
+.bottle-1{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 80px;
+}
+
+.bee-bottle {
+  width: 300px;
+  height: 378px;
+  display: flex;
+  flex-direction: column;
+  
+  margin: 0px;
+}
+
+.bee-bottle .description{
+  width: 300px;
+  display: flex;
+  text-align: center;
+  padding: 0px;
+}
+
+.bee-img-bottle{
+  -moz-transform: rotate(15deg);
+  -o-transform: rotate(15deg);
+  -webkit-transform: rotate(15deg);
+  transform: rotate(15deg);
+}
+
+.bee-bottle .img-left{
+  width: 250px;
+}
+
+.img-left{
+  height: 378px;
+}
+
+.description-right{
+  width: 300px;
+  height: 378px;
+  padding-bottom: 0px;
+  display: flex;
+  justify-content: center;
+}
+
+.description-right .subtitle{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 0px;
+}
+
+.bottle-2{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 80px;
+}
+
+.olive-bottle-web {
+  display: none;
+  
+}
+
+.olive-bottle-mobile {
+  display: none;
+  height: 378px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.olive-bottle-mobile .description{
+  display: flex;
+  text-align: center;
+}
+
+.olive-img-bottle-mobile{
+  -moz-transform: rotate(-18deg);
+  -o-transform: rotate(-18deg);
+  -webkit-transform: rotate(-18deg);
+  transform: rotate(-18deg);
+}
+
+.olive-bottle-mobile .img-right{
+  width: 300px;
+}
+
+.img-right{
+  height: 378px;
+}
+
+.description-left{
+  width: 300px;
+  height: 378px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  display: flex;
+}
+
+.description-left .subtitle{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 0px;
+}
+
+.bottle-3{
+  display: flex;
+  justify-content: center;
+}
+
+.pearl-bottle {
+  width: 300px;
+  height: 378px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.pearl-bottle .description{
+    width: 300px;
+    display: flex;
+    text-align: center;
+    padding: 0px;
+}
+
+.pearl-bottle .img-left{
+  width: 270px;
+  display: flex;
+  justify-content: center;
+  padding-left: 40px;
+  padding-bottom: 30px;
+}
+
+
+.more-fragrances{
   display: none;
 }
 }
