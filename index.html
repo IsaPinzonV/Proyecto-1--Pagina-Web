@@ -16,33 +16,47 @@
     <header>
       <!----Navigation Bar------>
       <nav class="navbar" role="navigation">
-          <!----Navigation Bar Left Side------>
-          <div class="navbar-start">
-            <a class="navbar-item"> LENGUAGE: EN </a>
+        <!----Navigation Bar Left Side------>
+        <div class="navbar-start">
+          <a class="navbar-item"> LENGUAGE: EN </a>
+
+          <button class="button is-light">
+            <img class="burguer" src="src/burguer-icon.png" />
+          </button>
+          <button class="button is-light">
+            <img class="search" src="src/search-mob.png" />
+          </button>
+        </div>
+
+        <!----Navigation Bar Right Side------>
+
+        <div class="navbar-end">
+          <!----Icon Buttons Mobile------>
+          <div class="buttons-mobile">
+            <button class="button is-light">
+              <img src="src/bag-mob.png" />
+            </button>
           </div>
-
-          <!----Navigation Bar Right Side------>
           <!----Text Items------>
-          <div class="navbar-end">
-            <a class="navbar-item"> CONTACT US </a>
+          <a class="navbar-item"> CONTACT US </a>
 
-            <a class="navbar-item"> SALE POINTS </a>
+          <a class="navbar-item"> SALE POINTS </a>
 
-            <!----Icon Buttons------>
-            <div class="navbar-item">
-              <div class="buttons">
-                <button class="button is-light">
-                  <img src="src/user-icon.png" />
-                </button>
-                <button class="button is-light">
-                  <img src="src/search-icon.png" />
-                </button>
-                <button class="button is-light">
-                  <img src="src/bag-icon.png" />
-                </button>
-              </div>
+          <!----Icon Buttons Web------>
+          <div class="navbar-item">
+            <div class="buttons">
+              <button class="button is-light">
+                <img src="src/user-icon.png" />
+              </button>
+              <button class="button is-light">
+                <img src="src/search-icon.png" />
+              </button>
+              <button class="button is-light">
+                <img src="src/bag-icon.png" />
+              </button>
             </div>
           </div>
+        </div>
       </nav>
 
       <!----Logo Brand------>
@@ -72,20 +86,20 @@
         <div class="branding-prod">
           <section class="column-left">
             <figure class="bottle-bundel">
-              <img class="branding-bottle" src="src/perf-1.png" width="220px"/>
+              <img class="branding-bottle" src="src/perf-1.png" width="220px" />
             </figure>
           </section>
           <section class="column-right">
             <div class="bee-branding">
-            <h3 class="subtitle">BEE</h3>
-            <p class="description">
-              Coffee and citrus based fragrance, masculine scents impossible to
-              ignore
-            </p>
-            <p class="description-mobile">
-              Coffee and citrus based fragrance
-            </p>
-          </div>
+              <h3 class="subtitle">BEE</h3>
+              <p class="description">
+                Coffee and citrus based fragrance, masculine scents impossible
+                to ignore
+              </p>
+              <p class="description-mobile">
+                Coffee and citrus based fragrance
+              </p>
+            </div>
           </section>
         </div>
       </div>
@@ -96,17 +110,28 @@
       <!----Tertiary Navigation------>
       <nav class="tertnav" role="navigation">
         <div class="tertnav-start">
-          <div class="columns">
-            <a class="column"> INTENSITY </a>
-            <a class="column"> FAVORITES </a>
-            <a class="column"> LAST COLLECTION </a>
+          <div class="colums-web">
+            <div class="columns">
+              <a class="column"> INTENSITY </a>
+              <a class="column"> FAVORITES </a>
+              <a class="column"> LAST COLLECTION </a>
+            </div>
           </div>
+
+          <div class="colums-mobile">
+            <div class="columns">
+              <a class="column"> LAST COLLECTION </a>
+            </div>
+          </div>
+
         </div>
+
+
         <div class="tertnav-end">
           <div class="columns">
             <a class="column"> FILTER </a>
             <button class="filter-button">
-              <img src="src/filter-icon.png" width="50px" />
+              <img src="src/filter-icon.png" width="40px" />
             </button>
           </div>
         </div>
@@ -216,8 +241,7 @@
         <div class="frag">
           <div class="frag-imgs">
             <div class="columns">
-
-                <!----Fragrance Scarlette------>
+              <!----Fragrance Scarlette------>
               <a class="column">
                 <figure class="frag-img">
                   <img src="src/frag-1.png" width="250px" />
@@ -227,7 +251,7 @@
                 <p class="description">Collection florale</p>
               </a>
 
-               <!----Fragrance Almond------>
+              <!----Fragrance Almond------>
               <a class="column">
                 <figure class="frag-img">
                   <img src="src/frag-2.png" width="250px" />
@@ -247,7 +271,7 @@
                 <p class="description">Agrumes doux</p>
               </a>
 
-               <!----Fragrance Capri------>
+              <!----Fragrance Capri------>
               <a class="column">
                 <figure class="frag-img">
                   <img src="src/frag-4.png" width="270px" />
@@ -267,7 +291,6 @@
       <div class="footer-tags">
         <div class="footer-coll-tags">
           <div class="columns">
-
             <!----Tags Costumer Support------>
             <div class="column">
               <div class="footer-titles">CUSTOMER SUPPORT</div>
@@ -293,7 +316,7 @@
               <a class="description"> Agrumes doux </a>
               <a class="description"> Séduction aromatique </a>
             </div>
-            
+
             <!----Tags Shippings and Returns------>
             <div class="column">
               <div class="footer-titles">SHIPPING & RETURNS</div>
@@ -305,25 +328,24 @@
         </div>
       </div>
 
-         <!----Footer Icons------>
+      <!----Footer Icons------>
       <div class="footer-icons">
         <nav class="footernav" role="navigation">
-            <div class="footer-start">
-              <div class="columns">
-                <div class="column"> FOLLOW US </div>
-                <button class="footer-button">
-                    <img src="src/face-icon.png" width="10px" />
-                  </button>
-                  <button class="footer-button">
-                    <img src="src/youtube-icon.png" width="19px" />
-                  </button>
-                  <button class="footer-button">
-                    <img src="src/insta-icon.png" width="18px" />
-                  </button>
-
-              </div>
+          <div class="footer-start">
+            <div class="columns">
+              <div class="column">FOLLOW US</div>
+              <button class="footer-button">
+                <img src="src/face-icon.png" width="10px" />
+              </button>
+              <button class="footer-button">
+                <img src="src/youtube-icon.png" width="19px" />
+              </button>
+              <button class="footer-button">
+                <img src="src/insta-icon.png" width="18px" />
+              </button>
             </div>
-          </nav>
+          </div>
+        </nav>
       </div>
     </footer>
   </body>

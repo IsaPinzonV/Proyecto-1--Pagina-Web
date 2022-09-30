@@ -15,6 +15,18 @@
   padding: 3%;
 }
 
+.buttons-mobile {
+  display: none;
+}
+
+.burguer {
+  display: none;
+}
+
+.search {
+  display: none;
+}
+
 .title-brand {
   width: 100%;
   height: 153px;
@@ -33,7 +45,7 @@
   font-size: 40px;
 }
 
-.secondnav{
+.secondnav {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -58,7 +70,6 @@
   font-size: 15px;
   font-weight: 300;
   padding: 2%;
-
 }
 
 .secondnav-menu .column {
@@ -106,7 +117,7 @@
   width: 50%;
   height: 100%;
   display: flex;
-  justify-content:left;
+  justify-content: left;
   align-items: center;
 }
 
@@ -162,7 +173,13 @@
   filter: drop-shadow(0 6mm 2mm rgb(217, 217, 217));
 }
 
+.colums-mobile{
+  display: none;
+}
+
 .tertnav-end {
+  width: 100%;
+  height: 100px;
   display: flex;
   justify-content: right;
   align-items: flex-end;
@@ -221,7 +238,7 @@
   padding-top: 60px;
 }
 
-.colldescrip .description-2 {
+.description-2 {
   width: 680px;
   font-family: "Poppins", sans-serif;
   color: rgb(0, 0, 0);
@@ -437,7 +454,6 @@
   justify-content: center;
   align-items: center;
   border-bottom: 0.5px solid rgb(204, 204, 204);
-
 }
 .footer-coll-tags {
   height: 300px;
@@ -471,97 +487,210 @@
   padding-top: 18px;
 }
 
-.footer-tags .description:hover{
+.footer-tags .description:hover {
   font-weight: 300;
   filter: drop-shadow(0 6mm 2mm rgb(217, 217, 217));
-  }
-
+}
 
 .footernav {
+  display: flex;
+  flex-direction: row;
+  color: rgb(0, 0, 0);
+  background-color: rgb(247, 247, 247);
+}
+
+.footer-start {
+  width: 100%;
+  height: 70px;
+  color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: left;
+  align-items: flex-end;
+  padding-bottom: 23px;
+}
+
+.footer-start .column {
+  width: 200px;
+  font-family: "Poppins", sans-serif;
+  color: rgb(0, 0, 0);
+  font-size: 15px;
+  font-weight: 400;
+  padding-left: 50px;
+  padding-top: 10px;
+}
+
+.footer-start .footer-button {
+  background-color: rgb(247, 247, 247);
+  border: 0px;
+  width: 50px;
+}
+
+.footer-start .footer-button:hover {
+  background-color: rgb(240, 240, 240);
+}
+
+@media screen and (min-width: 180px) and (max-width: 1024px) {
+  .navbar {
     display: flex;
     flex-direction: row;
-    color: rgb(0, 0, 0);
-    background-color: rgb(247, 247, 247);
   }
-  
-  .footer-start {
-    width: 100%;
-    height: 70px;
-    color: rgb(0, 0, 0);
+  .navbar-start {
+    width: 70%;
     display: flex;
-    justify-content: left;
-    align-items: flex-end;
-    padding-bottom: 23px;
+    align-items: center;
   }
-  
-  .footer-start .column {
-    width: 200px;
+
+  .navbar-end {
+    width: 30%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+  }
+
+  .navbar-start .navbar-item {
+    display: none;
+  }
+
+  .burguer {
+    display: flex;
+  }
+
+  .search {
+    display: flex;
+  }
+
+  .navbar-end .navbar-item {
+    display: none;
+  }
+
+  .buttons-mobile {
+    width: 50px;
+    display: flex;
+  }
+
+  .title-brand {
+    width: 100%;
+    height: 97px;
+    border-bottom: 0.5px solid rgb(255, 255, 255);
+}
+
+  .secondnav {
+    display: none;
+  }
+
+  .column-right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+  }
+
+  .bee-branding {
+    width: 85%;
+  }
+
+  .subtitle {
+    padding-left: 40px;
+  }
+  .description {
+    display: none;
+  }
+
+  .description-mobile {
+    display: flex;
+    width: 150px;
     font-family: "Poppins", sans-serif;
     color: rgb(0, 0, 0);
     font-size: 15px;
-    font-weight: 400;
-    padding-left: 50px;
-padding-top: 10px;
+    font-weight: 200;
   }
 
-  .footer-start .footer-button {
-    background-color: rgb(247, 247, 247);
-    border: 0px;
-    width: 50px;
-  }
-  
-  .footer-start .footer-button:hover {
-    background-color: rgb(240, 240, 240);
+  .branding {
+    width: 100%;
+    height: 252px;
+    display: flex;
+    justify-content: center;
   }
 
-  @media screen and (min-width: 180px) and (max-width: 1024px){
-
-    .secondnav{
-display: none;
-    }
-
-    .column-right {
-      width: 50%;
-      height: 100%;
-      display: flex;
-      justify-content:right;
-      align-items: center;
-    }
-
-    .bee-branding{
-      width: 85%;
-    }
-
-    .subtitle{
-padding-left: 40px;
-    }
-    .description {
-display: none;
-    }
-
-    .description-mobile {
-      display:flex;
-      width: 150px;
-      font-family: "Poppins", sans-serif;
-      color: rgb(0, 0, 0);
-      font-size: 15px;
-      font-weight: 200;
-    }
-
-    .branding {
-      width: 100%;
-      height: 252px;
-      display: flex;
-      justify-content: center;
+  .branding-bottle {
+    width: 180px;
   }
 
-    .branding-bottle{
-width: 180px;
-    }
-
-    .branding-prod {
-      background-image: url(src/bg-bottle.png);
-      background-size: 655px 232px;
+  .branding-prod {
+    background-image: url(src/bg-bottle.png);
+    background-size: 655px 232px;
   }
 
+  .tertnav {
+    height: 80px;
   }
+
+  .colums-web{
+    display: none;
+  }
+
+  .colums-mobile{
+    display: flex;
+    padding-left: 5px;
+  }
+
+.tertnav-start{
+  display:flex;
+  align-items: center;
+  padding-bottom: 0px;
+}
+
+.tertnav-start .column {
+  width: 220px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.tertnav-end{
+padding: 0px;
+display: flex;
+justify-content: right;
+align-items: center;
+padding-right: 60px;
+}
+  .tertnav-end .column{
+    display: none;
+  }
+
+  .tertnav-end .filter-button{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+  }
+
+.colldescrip{
+  display: flex;
+ justify-content: left;
+ align-items: flex-start;
+ height: 220px;
+}
+
+.subtitle-2 {
+  font-family: "Aboreto", cursive;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  padding-top: 60px;
+  padding-left: 43px;
+}
+
+.description-2 {
+  width: 387px;
+  font-family: "Poppins", sans-serif;
+  color: rgb(0, 0, 0);
+  font-size: 15px;
+  font-weight: 200;
+  padding-top: 30px;
+  padding-left: 43px;
+  text-align: left;
+}
+
+.coll-tags{
+  display: none;
+}
+}
