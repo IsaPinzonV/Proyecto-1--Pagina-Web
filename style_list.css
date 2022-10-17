@@ -1,0 +1,466 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Aboreto&display=swap");
+
+/*----Navigation Bar------*/
+.navbar {
+  background-color: rgb(247, 247, 247);
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+.navbar-item {
+  font-family: "Poppins", sans-serif;
+  color: rgb(0, 0, 0);
+  font-size: 15px;
+  font-weight: 220;
+  padding: 3%;
+}
+
+
+.buttons-mobile {
+    display: none;
+  }
+  
+  .burguer {
+    display: none;
+  }
+  
+  .search {
+    display: none;
+  }
+
+/*----Logo Brand------*/
+.title-brand {
+    width: 100%;
+    height: 153px;
+    border-bottom: 0.5px solid rgb(222, 222, 222);
+  }
+  
+  .logo-brand {
+    padding-top: 4%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .brand-name {
+    font-family: "Aboreto", cursive;
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+  }
+  
+/*----Filter Navigation------*/
+.filternav {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .filter-button{
+display: none;
+  }
+  
+  .filternav-start {
+    width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: left;
+  align-items: flex-end;
+  padding-bottom: 23px;
+  border-bottom: 0.5px solid rgb(222, 222, 222);
+  }
+  
+  .filternav-start .column {
+    width: 160px;
+  font-family: "Poppins", sans-serif;
+  color: rgb(0, 0, 0);
+  font-size: 15px;
+  font-weight: 300;
+  padding-left: 50px;
+  }
+  
+  .filternav-start .column:hover {
+    font-weight: 400;
+    filter: drop-shadow(0 6mm 2mm rgb(217, 217, 217));
+  }
+  
+  .colums-mobile {
+    display: none;
+  }
+  
+  .filternav-end {
+    width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: right;
+  align-items: flex-end;
+  padding-bottom: 23px;
+  padding-right: 50px;
+  border-bottom: 0.5px solid rgb(222, 222, 222);
+  }
+  
+  .filternav-end .column {
+    font-family: "Poppins", sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    font-weight: 300;
+    width: 100px;
+    padding-right: 100px;
+  }
+  
+  .filternav-end .column:hover {
+    font-weight: 400;
+    filter: drop-shadow(0 6mm 2mm rgb(217, 217, 217));
+  }
+  
+  .filternav-end .filter-button {
+    display: none;
+    background-color: white;
+    border: 0px;
+  }
+  
+  .filternav-end .filter-button:hover {
+    background-color: rgb(251, 251, 251);
+  }
+  
+/*----List products------*/
+
+.list_products{
+width: 100%;
+}
+
+h2{
+    font-family: "Poppins", sans-serif;
+    color: rgb(0, 0, 0);
+    font-size:20px;
+    font-weight: 500;
+  }
+  
+  h3{
+    font-family: "Poppins", sans-serif;
+    color: rgb(68, 68, 68);
+    font-size:14px;
+    font-weight: 200;
+  }
+  
+  h4{
+    font-family: "Poppins", sans-serif;
+    color: rgb(68, 68, 68);
+    font-size:15px;
+    font-weight: 300;
+  }
+  
+  h5{
+    font-family: "Poppins", sans-serif;
+    color: rgb(173, 0, 0);
+    font-size:17px;
+    font-weight: 400;
+  }
+  
+  p{
+  font-family: "Poppins", sans-serif;
+    color: rgb(0, 0, 0);
+    font-size:16px;
+    font-weight: 300;
+  }
+  
+  #productos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 35px;
+   width: 100%;
+   padding-bottom: 45px;
+  }
+  
+  .card_list{
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 0.25rem;
+  box-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%), 0 0 0 1px rgb(10 10 10 / 2%);
+  color: #4a4a4a;
+  max-width: 100%;
+  position: relative;
+
+  }
+  
+  .card_article{
+    padding-left: 40px;
+    padding-top: 40px;
+  }
+  
+  .card_price{
+    display: flex;
+    justify-content: end;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    padding-right: 40px;
+  }
+  
+  .card_figure{
+    display: flex;
+    justify-content: center;
+    height: 300px;
+  }
+  
+  .card_figure > img {
+    height: 100%;
+  }
+
+
+/*----Footer------*/
+.footer-tags {
+  width: 100%;
+  height: 450px;
+  background-color: rgb(247, 247, 247);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 0.5px solid rgb(204, 204, 204);
+}
+.footer-coll-tags {
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.footer-tags .column {
+  width: 290px;
+  font-family: "Aboreto", cursive;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-titles {
+  font-family: "Poppins", sans-serif;
+  color: rgb(0, 0, 0);
+  font-weight: 400;
+  font-size: 15px;
+  padding-bottom: 50px;
+}
+
+.footer-tags .description {
+  font-family: "Poppins", sans-serif;
+  color: rgb(0, 0, 0);
+  font-size: 15px;
+  font-weight: 200;
+  padding-top: 18px;
+}
+
+.footer-tags .description:hover {
+  font-weight: 300;
+  filter: drop-shadow(0 6mm 2mm rgb(217, 217, 217));
+}
+
+/*---Footer Icons------*/
+.footernav {
+  display: flex;
+  flex-direction: row;
+  color: rgb(0, 0, 0);
+  background-color: rgb(247, 247, 247);
+}
+
+.footer-start {
+  width: 100%;
+  height: 70px;
+  color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: left;
+  align-items: flex-end;
+  padding-bottom: 23px;
+}
+
+.footer-start .column {
+  width: 200px;
+  font-family: "Poppins", sans-serif;
+  color: rgb(0, 0, 0);
+  font-size: 15px;
+  font-weight: 400;
+  padding-left: 50px;
+  padding-top: 10px;
+}
+
+.footer-start .footer-button {
+  background-color: rgb(247, 247, 247);
+  border: 0px;
+  width: 50px;
+}
+
+.footer-start .footer-button:hover {
+  background-color: rgb(240, 240, 240);
+}
+
+.footer-mobile {
+  display: none;
+}
+
+
+@media screen and (min-width: 180px) and (max-width: 1024px) {
+
+    /*----Navigation Bar------*/
+    .navbar {
+      display: flex;
+      flex-direction: row;
+    }
+    .navbar-start {
+      width: 70%;
+      display: flex;
+      align-items: center;
+    }
+  
+    .navbar-end {
+      width: 30%;
+      display: flex;
+      justify-content: right;
+      align-items: center;
+    }
+  
+    .navbar-start .navbar-item {
+      display: none;
+    }
+    .secondnav {
+        display: none;
+      }
+  
+    .burguer {
+      display: flex;
+    }
+  
+    .search {
+      display: flex;
+    }
+  
+    .navbar-end .navbar-item {
+      display: none;
+    }
+  
+    .buttons-mobile {
+      width: 50px;
+      display: flex;
+    }
+  
+    /*----Logo Brand------*/
+    .title-brand {
+      width: 100%;
+      height: 97px;
+      border-bottom: 0.5px solid rgb(255, 255, 255);
+    }
+
+
+      
+/*----List products------*/
+  #productos{
+    display: flex;
+    flex-direction: none;
+    flex-wrap: none;
+    justify-content: none;
+    padding-top: 20px;
+   width: 100%;
+   padding-bottom: 45px;
+  }
+  
+  .card_list{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 0.25rem;
+  box-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%), 0 0 0 1px rgb(10 10 10 / 2%);
+  color: #4a4a4a;
+  max-width: 100%;
+  position: relative;
+
+  }
+  
+  .card_article{
+    padding-left: 40px;
+    padding-top: 40px;
+  }
+  
+  .card_price{
+    display: flex;
+    justify-content: end;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    padding-right: 40px;
+  }
+  
+  .card_figure{
+    display: flex;
+    justify-content: center;
+    height: 300px;
+  }
+  
+  .card_figure > img {
+    height: 100%;
+  }
+/*----Tertiary Navigation------*/
+.filternav {
+    display: none;
+  }
+
+  
+/*----Footer------*/
+    .footer-coll-tags {
+      display: none;
+    }
+  
+    .footer-tags {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .footer-mobile {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .follow-mobile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .follow-img {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 40px;
+    }
+  
+    .footer-mobile .footer-button {
+      padding: 20px;
+      background-color: rgb(247, 247, 247);
+      border: 0px;
+    }
+  
+    .footer-mobile .description {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .footer-mobile .footer-titles {
+      padding-bottom: 5px;
+      font-size: 18px;
+      font-weight: 500;
+    }
+  
+    .customer-mobile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 95px;
+    }
+  }
+  
