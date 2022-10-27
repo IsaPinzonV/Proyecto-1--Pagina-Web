@@ -91,10 +91,35 @@
           <div class="filternav-start">
             <div class="colums-web">
               <div class="columns">
-                <a class="column"> SORT BY </a>
-                <a class="column"> COLLECTION </a>
-                <a class="column"> ESSENCE </a>
-                <a class="column"> INTENSITY </a>
+
+                <select id= "filter_sortby" class="column column_select" name="SORT BY"> 
+                  <option value="COLLECTION"> SORT BY</option>
+                </select>
+                
+                <select id= "filter_collection" class="column column_select"name="COLLECTION">
+                  <option value="COLLECTION"> COLLECTION</option>
+                  <option value="Amande et moelleux"> Amande et moelleux</option> 
+                  <option value="Agrumes doux"> Agrumes doux</option>
+                  <option value="Collection florale"> Collection florale</option>
+                  <option value="Séduction aromatique"> Séduction aromatique</option>
+                </select>
+
+                <select  id= "filter_essence"  class="column column_select" name="ESSENCE"> 
+                  <option value="ESSENCE"> ESSENCE</option>
+                  <option value="Citrus essence"> Citrus essence</option> 
+                  <option value="Bitter vanilla essence"> Bitter vanilla essence</option>
+                  <option value="Fresh and musky essence"> Fresh and musky essence</option>
+                  <option value="Smoked vanilla essence"> Smoked vanilla essence</option>    
+                  <option value="Bloom essence"> Bloom essence</option>
+                  <option value="Woody and fresh essence"> Woody and fresh essence</option>  
+                </select>
+
+                <select id= "filter_intensity" class="column column_select" name="INTENSITY">
+                  <option value="INTENSITY"> INTENSITY</option>
+                  <option value="Low intensity"> Low intensity</option> 
+                  <option value="Medium intensity"> Medium intensity</option>
+                  <option value="High intensity"> High intensity</option>
+                </select>
               </div>
             </div>
         </nav>

@@ -120,6 +120,16 @@ display: none;
   .filternav-end .filter-button:hover {
     background-color: rgb(251, 251, 251);
   }
+
+  .column_select{
+
+    border: none;
+    width: 300px;
+  }
+
+  .column_select:hover {
+    background-color: rgb(251, 251, 251);
+  }
   
 /*----List products------*/
 
@@ -168,8 +178,10 @@ h2{
     flex-wrap: wrap;
     justify-content: space-around;
     padding-top: 35px;
+ 
    width: 100%;
    padding-bottom: 45px;
+   margin-inline: 16px;
   }
   
   .card_list{
@@ -183,7 +195,8 @@ h2{
   color: #4a4a4a;
   max-width: 100%;
   position: relative;
-
+  margin-inline: 16px;
+  margin-bottom: 30px; /*-margen vertical-*/
   }
   
   .card_article{
