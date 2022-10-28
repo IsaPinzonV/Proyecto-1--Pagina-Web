@@ -255,27 +255,26 @@ function filtrar() {
 
   let filters = {};
 
-  if (collection === "COLLECTION" || collection === "") {
-    
+  if (collection === "COLLECTION" || collection === "All") {
+    products_filter;
   } else {
-   
     filters['collection'] = collection
   }
 
-  if (essences === "ESSENCE" || essences === "") {
+  if (essences === "ESSENCE" || essences === "All") {
     products_filter;
   } else {
     filters['essences'] = essences
   }
 
-  if (intensity === "INTENSITY" || intensity === "") {
+  if (intensity === "INTENSITY" || intensity === "All") {
     products_filter;
   } else {
     
     filters['intensity'] = intensity
   }
 
-  if (type === "TYPE" || type === "") {
+  if (type === "TYPE" || type === "All") {
     products_filter;
   } else {
     
@@ -297,6 +296,7 @@ function filtrar() {
   )
   console.log(type);
   pintar(_pr);
+  pintar();
 }
 
 const productos = document.getElementById("productos");
