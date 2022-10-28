@@ -338,6 +338,9 @@ display: none;
   height: 2900px;
 }
 
+.tertnav{
+  display: none;
+}
 
   /*----Footer------*/
 .footer-tags {
@@ -474,6 +477,15 @@ display: none;
     }
   
     /*----Logo Brand------*/
+
+    .logo-brand {
+      padding-top: 4%;
+      display: flex;
+      justify-content: center;
+      padding-bottom: 5%;
+      border-bottom: 0.5px solid rgb(222, 222, 222);
+    }
+    
     .title-brand {
       width: 100%;
       height: 97px;
@@ -509,6 +521,7 @@ padding-bottom: 30px;
   /*----Tert nav------*/
     
   .tertnav {
+    display: flex;
     height: 80px;
   }
 

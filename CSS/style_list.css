@@ -41,7 +41,7 @@
     display: flex;
     justify-content: center;
     padding-bottom: 5%;
-    border-bottom: 0.5px solid rgb(222, 222, 222);
+
   }
   
   .brand-name {
@@ -132,7 +132,7 @@ display: none;
   .column_select:hover {
     background-color: rgb(251, 251, 251);
   }
-  
+
 /*----Tert nav------*/
 
 .tertnav {
@@ -299,6 +299,10 @@ h2{
   }
 
 
+.tertnav{
+  display: none;
+}
+
 /*----Footer------*/
 .footer-tags {
   width: 100%;
@@ -434,6 +438,14 @@ h2{
     }
   
     /*----Logo Brand------*/
+    
+    .logo-brand {
+      padding-top: 4%;
+      display: flex;
+      justify-content: center;
+      padding-bottom: 5%;
+      border-bottom: 0.5px solid rgb(222, 222, 222);
+    }
     .title-brand {
       width: 100%;
       height: 97px;
@@ -443,6 +455,7 @@ h2{
   /*----Tert nav------*/
     
   .tertnav {
+    display: flex;
     height: 80px;
   }
 
