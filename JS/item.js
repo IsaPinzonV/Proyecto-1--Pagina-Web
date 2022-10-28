@@ -18,7 +18,9 @@ const url = window.location.search;
         <h3 class="essence_detail"> Essence: ${productDetail.essence}</h3>
         <p class="intensity_detail"> Intensity: ${productDetail.intensity}</p>
         <p class="type_detail"> Type: ${productDetail.type}</p>
-        
+
+        <button id="añadir" class="button is-black button_añadir">Añadir</button>
+
     </article>
 </section>;`
 

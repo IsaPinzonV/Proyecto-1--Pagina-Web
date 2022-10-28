@@ -281,6 +281,7 @@ function filtrar() {
     
     filters['type'] = type
   }
+  
 
   const _pr = currentProductsFilter.filter(
     p => {
@@ -290,9 +291,11 @@ function filtrar() {
        && (filters['intensity']? p.intensity === filters['intensity'] : true)
         && (filters['essences']? p.essence === filters['essences'] : true)
         && (filters['collection']? p.collect === filters['collection'] : true)
+        
         )
     }
   )
+  console.log(type);
   pintar(_pr);
 }
 
