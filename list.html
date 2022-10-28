@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>OPAL: Luxury store</title>
     <link
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
   
-    <link rel="stylesheet" href="./style_list.css">
+    <link rel="stylesheet" href="./CSS/style_list.css">
 </head>
 <body>
   <!----Header------>
@@ -91,13 +91,9 @@
           <div class="filternav-start">
             <div class="colums-web">
               <div class="columns">
-
-                <select id= "filter_sortby" class="column column_select" name="SORT BY"> 
-                  <option value="COLLECTION"> SORT BY</option>
-                </select>
                 
-                <select id= "filter_collection" class="column column_select"name="COLLECTION">
-                  <option value="COLLECTION"> COLLECTION</option>
+                <select id= "filter_collection" class="column column_select"name="COLLECTIONN">
+                  <option value="COLLECTIONN"> COLLECTION</option>
                   <option value="Amande et moelleux"> Amande et moelleux</option> 
                   <option value="Agrumes doux"> Agrumes doux</option>
                   <option value="Collection florale"> Collection florale</option>
@@ -120,9 +116,48 @@
                   <option value="Medium intensity"> Medium intensity</option>
                   <option value="High intensity"> High intensity</option>
                 </select>
+
+                <select id= "filter_type" class="column column_select" name="TYPE"> 
+                  <option value="TYPE"> TYPE</option>
+                  <option value="Single"> Single</option> 
+                  <option value="Bundel"> Bundel</option>
+                </select>
               </div>
             </div>
         </nav>
+
+          <!----Tertiary Navigation------>
+      <nav class="tertnav" role="navigation">
+        <div class="tertnav-start">
+          <div class="colums-web">
+            <div class="columns">
+              <a class="column"> INTENSITY </a>
+              <a class="column"> FAVORITES </a>
+              <a class="column"> LAST COLLECTION </a>
+            </div>
+          </div>
+
+          <div class="colums-mobile">
+            <div class="columns">
+              <a href="list.html"class="column"> COLLECTIONS </a>
+            </div>
+          </div>
+
+        </div>
+
+
+        <div class="tertnav-end">
+          <div class="columns">
+            <a class="column" href="list.html"> 
+              FILTER
+             </a>
+
+            <button   class="filter-button">
+              <img src="src/filter-icon.png" width="40px" />
+            </button>
+          </div>
+        </div>
+      </nav>
         
 
   <section class="main_filters">
@@ -222,5 +257,5 @@
       </footer>
     
 </body>
-<script src="./detail.js"></script>
+<script src="./JS/detail.js"></script>
 </html>
