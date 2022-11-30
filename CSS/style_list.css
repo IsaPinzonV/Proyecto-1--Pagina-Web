@@ -25,6 +25,17 @@ button#btn-admi {
   font-weight: 300;
 }
 
+button#btn-admi {
+  padding-top: 33px;
+  font-weight: 300;
+  padding-right: 30px;
+}
+button#btn-admi {
+padding-top: 33px;
+font-weight: 300;
+padding-bottom: 30px;
+}
+
 .buttons-mobile {
     display: none;
   }

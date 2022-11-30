@@ -476,7 +476,16 @@ display: none;
       justify-content: right;
       align-items: center;
     }
-  
+    button#btn-admi {
+      padding-top: 33px;
+      font-weight: 300;
+      padding-right: 30px;
+  }
+  button#btn-admi {
+    padding-top: 33px;
+    font-weight: 300;
+    padding-bottom: 30px;
+}
     .navbar-start .navbar-item {
       display: none;
     }
