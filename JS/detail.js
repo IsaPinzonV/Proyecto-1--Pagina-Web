@@ -1,7 +1,9 @@
+import { addProducts } from "../utils/firebase.js";
+
 const products = [
   {
     id:1,
-    image: (src = "./assets/CITRUS.png"),
+    image:   "./assets/CITRUS.png ",
     name: "Citrus",
     descrip: "Perfume for all genders",
     price: "450 USD",
@@ -12,7 +14,7 @@ const products = [
   },
   {
     id:2,
-    image: (src = "./assets/MOCHA.png"),
+    image:   "./assets/MOCHA.png",
     name: "Mocha",
     descrip: "Perfume with delicate notes",
     price: "230 USD",
@@ -23,7 +25,7 @@ const products = [
   },
   {
     id:3,
-    image: (src = "./assets/REBREN.png"),
+    image:   "./assets/REBREN.png",
     name: "Rebren",
     descrip: "Masculine note perfume",
     price: "330 USD",
@@ -34,7 +36,7 @@ const products = [
   },
   {
     id:4,
-    image: (src = "./assets/CLASSIC.png"),
+    image:   "./assets/CLASSIC.png",
     name: "Classic",
     descrip: "Perfume with delicate notes",
     price: "150 USD",
@@ -45,7 +47,7 @@ const products = [
   },
   {
     id:5,
-    image: (src = "./assets/PEACH.png"),
+    image:   "./assets/PEACH.png",
     name: "Peach",
     descrip: "Feminine notes perfume",
     price: "260 USD",
@@ -56,7 +58,7 @@ const products = [
   },
   {
     id:6,
-    image: (src = "./assets/COPER.png"),
+    image:   "./assets/COPER.png",
     name: "Coper",
     descrip: "Masculine note perfume ",
     price: "180 USD",
@@ -67,7 +69,7 @@ const products = [
   },
   {
     id:7,
-    image: (src = "./assets/LUX.png"),
+    image:   "./assets/LUX.png",
     name: "Lux",
     descrip: "Perfume for all genders ",
     price: "200 USD",
@@ -78,7 +80,7 @@ const products = [
   },
   {
     id:8,
-    image: (src = "./assets/SAVIL.png"),
+    image:   "./assets/SAVIL.png",
     name: "Savil",
     descrip: "Perfume for all genders",
     price: "220 USD",
@@ -89,7 +91,7 @@ const products = [
   },
   {
     id:9,
-    image: (src = "./assets/BAILEYS.png"),
+    image:   "./assets/BAILEYS.png",
     name: "Baileys",
     descrip: "Feminine notes perfume",
     price: "80 USD",
@@ -100,7 +102,7 @@ const products = [
   },
   {
     id:10,
-    image: (src = "./assets/MARIS.png"),
+    image:   "./assets/MARIS.png",
     name: "Maris",
     descrip: "Perfume with delicate notes",
     price: "55 USD ",
@@ -111,7 +113,7 @@ const products = [
   },
   {
     id:11,
-    image: (src = "./assets/SULFE.png"),
+    image:   "./assets/SULFE.png",
     name: "Sulfe",
     descrip: "Perfume for all genders",
     price: "150 USD",
@@ -122,7 +124,7 @@ const products = [
   },
   {
     id:12,
-    image: (src = "./assets/GOLDIE.png"),
+    image:   "./assets/GOLDIE.png",
     name: "Goldie",
     descrip: "Perfume for all genders",
     price: "270 USD",
@@ -133,7 +135,7 @@ const products = [
   },
   {
     id:13,
-    image: (src = "./assets/COTTON.png"),
+    image:   "./assets/COTTON.png",
     name: "Cotton",
     descrip: "Perfume for all genders",
     price: "160 USD",
@@ -144,7 +146,7 @@ const products = [
   },
   {
     id:14,
-    image: (src = "./assets/MEDOW.png"),
+    image:   "./assets/MEDOW.png",
     name: "Medow",
     descrip: "Complimentary gift packs",
     price: "4560 USD",
@@ -155,7 +157,7 @@ const products = [
   },
   {
     id:15,
-    image: (src = "./assets/REBREN BUNDEL.png"),
+    image:   "./assets/REBREN BUNDEL.png",
     name: "Rebren Bundel",
     descrip: "Gift packs dry odors",
     price: "1230 USD",
@@ -166,7 +168,7 @@ const products = [
   },
   {
     id:16,
-    image: (src = "./assets/PEACH BUNDEL.png"),
+    image:   "./assets/PEACH BUNDEL.png",
     name: "Peach Bundel",
     descrip: "Sweet smelling gift packs",
     price: "2200 USD",
@@ -177,7 +179,7 @@ const products = [
   },
   {
     id:17,
-    image: (src = "./assets/GILDIE BUNDEL.png"),
+    image:   "./assets/GILDIE BUNDEL.png",
     name: "Goldie Bundel",
     descrip: "Complimentary gift packs",
     price: "1605 USD",
@@ -188,7 +190,7 @@ const products = [
   },
   {
     id:18,
-    image: (src = "./assets/PINK BUNDEL.png"),
+    image:   "./assets/PINK BUNDEL.png",
     name: "Pink Bundel",
     descrip: "Sweet smelling gift packs",
     price: "1850 USD",
@@ -199,7 +201,7 @@ const products = [
   },
   {
     id:19,
-    image: (src = "./assets/DREAM BUNDEL.png"),
+    image:   "./assets/DREAM BUNDEL.png",
     name: "Dream Bundel",
     descrip: "Complimentary gift packs",
     price: "2400 USD",
@@ -210,7 +212,7 @@ const products = [
   },
   {
     id:20,
-    image: (src = "./assets/OLIVER BUNDEL.png"),
+    image:   "./assets/OLIVER BUNDEL.png",
     name: "Oliver Bundel",
     descrip: "Gift packs dry odors",
     price: "3000 USD",
@@ -221,7 +223,7 @@ const products = [
   },
   {
     id:21,
-    image: (src = "./assets/CONSTANS BUNDEL.png"),
+    image:   "./assets/CONSTANS BUNDEL.png",
     name: "Constans Bundel",
     descrip: "Complimentary gift packs",
     price: "2560 USD",
@@ -231,6 +233,7 @@ const products = [
     type: "Bundel"
   },
 ];
+
 
 const filter_collection = document.getElementById("filter_collection"); 
 const filter_essence = document.getElementById("filter_essence"); 

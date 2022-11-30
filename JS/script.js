@@ -1,20 +1,27 @@
-/*const burgerIcon = document.querySelector('#burger-icon'),
-	      menu = document.querySelector('#menu');
-	
+import { authe, validateUser } from "../utils/firebase.js";
+import {    onAuthStateChanged
+} from "https://www.gstatic.com/firebasejs/9.11.0/firebase-auth.js";
 
-          burgerIcon.addEventListener('click', (e) => {
-	   
-	    menu.classList.toggle('active');
-	    document.body.classList.toggle('opacity');
-	    
-	    const rutaActual = e.target.getAttribute('src');
-	
+const btnUser = document.getElementById('btn-user');
+btnUser.addEventListener('click' ,(e)=> { e.preventDefault()
+  console.log('user')
+  window.location.href="login.html";
+  });
 
-	    if(rutaActual == 'src/burguer-icon.png'){
-	        e.target.setAttribute('src','src/burguer-icon.png');
-	    }else{
-	        e.target.setAttribute('src','src/burguer-icon.png');
-	    }
-	});
+let userActual;
 
-*/
+onAuthStateChanged(authe, (user)=> {
+ userActual = user
+})
+
+const btnBag = document.getElementById('btnbag');
+btnBag.addEventListener('click' ,(e)=> { e.preventDefault()
+  
+if (userActual) {
+    window.location.href = "bag.html"
+} else {
+    alert("no puede entrar")
+}
+});
+
+ 

@@ -96,8 +96,10 @@ font-size:16px;
     padding-bottom: 80px;
   }
 
-#añadir{
+#add-bag{
   width: 300px;
+  font-family: "Poppins", sans-serif;
+    font-weight: 500;
 }
 
 

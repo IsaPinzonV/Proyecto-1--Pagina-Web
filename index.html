@@ -23,20 +23,6 @@
           <button class="button is-light">
             <img class="burguer" id="burguer" src="src/burguer-icon.png" />
           </button>
- <!---
-          <div class="menu-burguer active" id="menu">
-            <ul>
-              <li  href="http://127.0.0.1:5500/index.html"> Home </li>
-              <li href="list.html"> Products </li>
-            </ul>
-          </div>
-
-          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-          </a>
-        </div>
-        --->
 
           <button class="button is-light">
             <img class="search" src="src/search-mob.png" />
@@ -51,22 +37,24 @@
             <button class="button is-light">
               <img src="src/bag-mob.png" />
             </button>
+          
+
           </div>
           <!----Text Items------>
           <a class="navbar-item"> CONTACT US </a>
 
-          <a class="navbar-item"> SALE POINTS </a>
+          <a class="navbar-item" href="http://127.0.0.1:5500/newproduct.html"> SALE POINTS </a>
 
           <!----Icon Buttons Web------>
           <div class="navbar-item">
             <div class="buttons">
-              <button class="button is-light">
-                <img src="src/user-icon.png" />
+              <button id="btn-user" class="button is-light">
+                <img  src="src/user-icon.png" />
               </button>
               <button class="button is-light">
                 <img src="src/search-icon.png" />
               </button>
-              <button class="button is-light">
+              <button id="btnbag" class="button is-light">
                 <img src="src/bag-icon.png" />
               </button>
             </div>
@@ -413,5 +401,9 @@
         </nav>
       </section>
     </footer>
+
+    
   </body>
+  <script type="module" src="./utils/firebase.js"></script>
+    <script type="module" src="./JS/script.js"></script>
 </html>

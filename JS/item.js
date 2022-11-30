@@ -1,3 +1,5 @@
+
+
 let productId;
 
 const url = window.location.search;
@@ -19,7 +21,7 @@ const url = window.location.search;
         <p class="intensity_detail"> Intensity: ${productDetail.intensity}</p>
         <p class="type_detail"> Type: ${productDetail.type}</p>
 
-        <button id="añadir" class="button is-black button_añadir">Añadir</button>
+        <button id="add-bag" class="button is-black button_añadir">ADD TO BAG</button>
 
     </article>
 </section>;`

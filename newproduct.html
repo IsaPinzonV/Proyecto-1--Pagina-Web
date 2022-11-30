@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OPAL</title>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+  />
+    <link rel="stylesheet" href="./CSS/newproduct.css" />
+</head>
+<body>
+    
+    <!----Header------>
+    <header>
+        <!----Navigation Bar------>
+        <nav class="navbar" role="navigation">
+          <!----Navigation Bar Left Side------>
+          <div class="navbar-start">
+            <a id="drop-down" class="navbar-item">LANGUAGE: EN</a>
+  
+  
+            <button class="button is-light">
+              <img class="burguer" src="src/burguer-icon.png" />
+            </button>
+            <button class="button is-light">
+              <img class="search" src="src/search-mob.png" />
+            </button>
+          </div>
+  
+          <!----Navigation Bar Right Side------>
+  
+          <div class="navbar-end">
+            <!----Icon Buttons Mobile------>
+            <div class="buttons-mobile">
+              <button class="button is-light">
+                <img src="src/bag-mob.png" />
+              </button>
+            </div>
+            <!----Text Items------>
+            <a class="navbar-item"> CONTACT US </a>
+
+  
+            <a class="navbar-item"> SALE POINTS </a>
+  
+            <!----Icon Buttons Web------>
+            <div class="navbar-item">
+              <div class="buttons">
+                <div class="buttons">
+                  <button id="btn-user" class="button is-light">
+                    <img  src="src/user-icon.png" />
+                  </button>
+                <button class="button is-light">
+                  <img src="src/search-icon.png" />
+                </button>
+                <button class="button is-light">
+                  <img src="src/bag-icon.png" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+  
+      <main>
+            <!----Logo Brand------>
+        <div class="title-brand">
+          <div class="logo-brand">
+            <a class="brand-name" href="http://127.0.0.1:5500/index.html">
+              OPAL
+            </a>
+          </div>
+        </div>
+
+
+      <!----Secondary Navigation------>
+      <nav class="secondnav" role="navigation">
+        <div class="secondnav-menu">
+          <div class="columns">
+            <a class="column"> FEMALE FRAGRANCES </a>
+            <a class="column"> MALE FRAGRANCES </a>
+            <a class="column"> COLLECTIONS </a>
+            <a class="column"> BUNDELS </a>
+            <a class="column"> SALES </a>
+          </div>
+        </div>
+      </nav>
+      <div id="productos"></div>
+
+      <script src="./JS/detail.js"></script>
+      <script src="./JS/item.js"></script>
+
+    </main>
+       <!----Register------>
+       <main class="form">
+
+        <div class="tab-content">
+          <div id="signup">   
+            <h1>Create a new product</h1>
+            
+            <form action="/" method="post" id="register">
+            
+              <div class="field-wrap">
+                <label for="prod-name">
+                  Product Name<span class="req">*</span>
+                </label>
+                <input id="prod-name" type="text" required autocomplete="off" />
+              </div>
+          
+              <div class="field-wrap">
+                <label for="prod-descript">
+                    Product Description<span class="req">*</span>
+                </label>
+                <input id="prod-descript" type="text"required autocomplete="off"/>
+              </div>
+
+  
+            <div class="field-wrap">
+              <label for="prod-price">
+                Price<span class="req">*</span>
+              </label>
+              <input id="prod-price" type="number"required autocomplete="off"/>
+            </div>
+            
+            <div class="field-wrap">
+              <label for="prod-essence">
+                Product Essence<span class="req">*</span>
+              </label>
+              <input id="prod-essence" type="text"required autocomplete="off"/>
+            </div>
+
+            <div class="field-wrap">
+                <label for="prod-collect">
+                  Product Collection<span class="req">*</span>
+                </label>
+                <input id="prod-collect" type="text"required autocomplete="off"/>
+              </div>
+
+              <div class="field-wrap">
+                <label for="prod-inten">
+                  Product Intenisty<span class="req">*</span>
+                </label>
+                <input id="prod-inten" type="text"required autocomplete="off"/>
+              </div>
+
+              <div class="field-wrap">
+                <label for="prod-type">
+                  Product Type<span class="req">*</span>
+                </label>
+                <input id="prod-type" type="text"required autocomplete="off"/>
+              </div>
+            </div>
+
+            <button type="submit" class="button button-block" id="btn-newprod">SAVE NEW PRODUCT</button>
+            
+            </form>
+  
+          </div>
+        </main>
+    <!----Footer------>
+    <footer>
+        <section class="footer-tags">
+          <div class="footer-coll-tags">
+            <div class="columns">
+              <!----Tags Costumer Support------>
+              <div class="column">
+                <div class="footer-titles">CUSTOMER SUPPORT</div>
+  
+                <a class="description"> Contact </a>
+                <a class="description"> Suscriptions </a>
+                <a class="description"> Advice </a>
+                <a class="description"> Accessibility </a>
+              </div>
+  
+              <!----Tags About Us------>
+              <div class="column">
+                <div class="footer-titles">ABOUT US</div>
+                <a class="description"> Bussines </a>
+                <a class="description"> Occupation </a>
+              </div>
+  
+              <!----Tags Collections------>
+              <div class="column">
+                <div class="footer-titles">COLLECTIONS</div>
+                <a class="description"> Collection florale </a>
+                <a class="description"> Amande et moelleux </a>
+                <a class="description"> Agrumes doux </a>
+                <a class="description"> Séduction aromatique </a>
+              </div>
+  
+              <!----Tags Shippings and Returns------>
+              <div class="column">
+                <div class="footer-titles">SHIPPING & RETURNS</div>
+                <a class="description"> Shipping </a>
+                <a class="description"> Order tracking </a>
+                <a class="description"> Returns and exchange </a>
+              </div>
+            </div>
+          </div>
+  
+          <div class="footer-mobile">
+            <section class="follow-mobile">
+              <div class="footer-titles">FOLLOW US</div>
+              <div class="follow-img">
+                <button class="footer-button">
+                  <img src="src/face-icon.png" width="20px" />
+                </button>
+                <button class="footer-button">
+                  <img src="src/youtube-icon.png" width="29px" />
+                </button>
+                <button class="footer-button">
+                  <img src="src/insta-icon.png" width="28px" />
+                </button>
+              </div>
+            </section>
+            <section class="customer-mobile">
+              <div class="footer-titles">CUSTOMER SUPPORT</div>
+              <a class="description"> Contact </a>
+              <a class="description"> Accessibility </a>
+            </section>
+          </div>
+        </section>
+  
+        <!----Footer Icons------>
+        <section class="footer-icons">
+          <nav class="footernav" role="navigation">
+            <div class="footer-start">
+              <div class="columns">
+                <div class="column">FOLLOW US</div>
+                <button class="footer-button">
+                  <img src="src/face-icon.png" width="10px" />
+                </button>
+                <button class="footer-button">
+                  <img src="src/youtube-icon.png" width="19px" />
+                </button>
+                <button class="footer-button">
+                  <img src="src/insta-icon.png" width="18px" />
+                </button>
+              </div>
+            </div>
+          </nav>
+        </section>
+      </footer>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script type="module" src="./utils/firebase.js"></script>
+<script type="module" src="./JS/newproduct.js"></script>
+<script type="module" src="./JS/script.js"></script>
+</html>

@@ -1,30 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>OPAL: Luxury store</title>
-
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OPAL</title>
     <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
-    />
-    <link rel="stylesheet" href="./CSS/item.css" />
-  </head>
-  <body>
-    <!----Header------>
-    <header>
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+  />
+    <link rel="stylesheet" href="./CSS/login.css" />
+</head>
+<body>
+     <!----Header------>
+     <header>
       <!----Navigation Bar------>
       <nav class="navbar" role="navigation">
         <!----Navigation Bar Left Side------>
         <div class="navbar-start">
-          <a id="drop-down" class="navbar-item">LANGUAGE: EN</a>
-
-
+            <a id="drop-down" class="navbar-item">LANGUAGE: EN</a>
+       
           <button class="button is-light">
-            <img class="burguer" src="src/burguer-icon.png" />
+            <img class="burguer" id="burguer" src="src/burguer-icon.png" />
           </button>
+
+
           <button class="button is-light">
             <img class="search" src="src/search-mob.png" />
           </button>
@@ -61,68 +61,105 @@
           </div>
         </div>
       </nav>
-    </header>
 
-    <main>
-          <!----Logo Brand------>
+      <!----Logo Brand------>
       <div class="title-brand">
         <div class="logo-brand">
           <a class="brand-name" href="http://127.0.0.1:5500/index.html">
-            <h1>OPAL</h1>
+            OPAL
           </a>
         </div>
       </div>
+     </header>
 
-      <!----Tertiary Navigation------>
-      <nav class="tertnav" role="navigation">
-        <div class="tertnav-start">
-          <div class="colums-web">
-            <div class="columns">
-              <a class="column"> INTENSITY </a>
-              <a class="column"> FAVORITES </a>
-              <a class="column"> LAST COLLECTION </a>
-            </div>
-          </div>
-
-          <div class="colums-mobile">
-            <div class="columns">
-              <a href="list.html"class="column"> LAST COLLECTION </a>
-            </div>
-          </div>
-
-        </div>
-
-
-        <div class="tertnav-end">
-          <div class="columns">
-            <a class="column" href="list.html"> 
-              FILTER
-             </a>
-
-            <button   class="filter-button">
-              <img src="src/filter-icon.png" width="40px" />
-            </button>
-          </div>
-        </div>
-      </nav>
+       <!----Register------>
+    <main class="form">
+      
+        <ul class="tab-group">
+          <li class="tab active"><a href="#signup">Sign Up</a></li>
+          <li class="tab"><a href="#login">Log In</a></li>
+        </ul>
         
+        <div class="tab-content">
+          <div id="signup">   
+            <h1>Sign Up for Free</h1>
+            
+            <form action="/" method="post" id="register">
+            
+            <div class="top-row">
+              <div class="field-wrap">
+                <label for="first-name">
+                  First Name<span class="req">*</span>
+                </label>
+                <input id="first-name" type="text" required autocomplete="off" />
+              </div>
+          
+              <div class="field-wrap">
+                <label for="last-name">
+                  Last Name<span class="req">*</span>
+                </label>
+                <input id="last-name" type="text"required autocomplete="off"/>
+              </div>
+            </div>
+  
+            <div class="field-wrap">
+              <label for="email">
+                Email Address<span class="req">*</span>
+              </label>
+              <input id="email" type="email"required autocomplete="off"/>
+            </div>
+            
+            <div class="field-wrap">
+              <label for="password">
+                Set A Password<span class="req">*</span>
+              </label>
+              <input id="password" type="password"required autocomplete="off"/>
+            </div>
 
-      <!----Secondary Navigation------>
-      <nav class="secondnav" role="navigation">
-        <div class="secondnav-menu">
-          <div class="columns">
-            <a class="column"> FEMALE FRAGRANCES </a>
-            <a class="column"> MALE FRAGRANCES </a>
-            <a class="column"> COLLECTIONS </a>
-            <a class="column"> BUNDELS </a>
-            <a class="column"> SALES </a>
+            <div class="field-wrap">
+              <label for="password-confirm">
+                Confirm Password<span class="req">*</span>
+              </label>
+              <input id="password-confirm" type="password"required autocomplete="off"/>
+            </div>
+            
+            <button type="submit" class="button button-block" id="btn-signup">Get Started</button>
+            
+            </form>
+  
           </div>
-        </div>
-      </nav>
-      <div id="productos"></div>
-
-      <script src="./JS/detail.js"></script>
-      <script src="./JS/item.js"></script>
+          
+            <!----Login------>
+          <div id="login">   
+            <h1>Welcome Back!</h1>
+            
+            <form action="/" method="post">
+            
+              <div class="field-wrap">
+              <label for="email-login">
+                Email Address<span class="req">*</span>
+              </label>
+              <input id="email-login" type="email"required autocomplete="off"/>
+            </div>
+            
+            <div class="field-wrap">
+              <label for="password-login">
+                Password<span class="req">*</span>
+              </label>
+              <input id="password-login" type="password"required autocomplete="off"/>
+            </div>
+            
+            <p class="forgot"><a href="#">Forgot Password?</a></p>
+            
+            <button class="button button-block" id="btn-login">Log In</button>
+            
+            </form>
+  
+          </div>
+          
+        </div><!-- tab-content -->
+        
+    </main> <!-- /form -->
 
 
     <!----Footer------>
@@ -166,27 +203,28 @@
           </div>
         </div>
 
+
         <div class="footer-mobile">
           <section class="follow-mobile">
             <div class="footer-titles">FOLLOW US</div>
             <div class="follow-img">
-              <button class="footer-button">
-                <img src="src/face-icon.png" width="20px" />
-              </button>
-              <button class="footer-button">
-                <img src="src/youtube-icon.png" width="29px" />
-              </button>
-              <button class="footer-button">
-                <img src="src/insta-icon.png" width="28px" />
-              </button>
-            </div>
+            <button class="footer-button">
+              <img src="src/face-icon.png" width="20px" />
+            </button>
+            <button class="footer-button">
+              <img src="src/youtube-icon.png" width="29px" />
+            </button>
+            <button class="footer-button">
+              <img src="src/insta-icon.png" width="28px" />
+            </button>
+          </div>
           </section>
           <section class="customer-mobile">
             <div class="footer-titles">CUSTOMER SUPPORT</div>
             <a class="description"> Contact </a>
             <a class="description"> Accessibility </a>
           </section>
-        </div>
+          </div>
       </section>
 
       <!----Footer Icons------>
@@ -209,7 +247,12 @@
         </nav>
       </section>
     </footer>
-   
+
   </body>
-  <script type="module" src="./JS/script.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script type="module" src="./utils/firebase.js"></script>
+<script type="module" src="./JS/loginQuery.js"></script>
+<script type="module" src="./JS/login.js"></script>
+<script type="module" src="./JS/script.js"></script>
+
 </html>
