@@ -69,8 +69,6 @@ const firebaseConfig = {
       });
  }
 
-// MdH5YZJnoBfcOWbnMCOgLWVg47J2
-
  export async function newProduct(nameprod,description,price,essence,collect,intensity,type){
     try {
         const docRef = await addDoc(collection(db, "new products"), {

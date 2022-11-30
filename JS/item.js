@@ -34,4 +34,3 @@ let allproducts = []
 
     </article>
 </section>;`
-
