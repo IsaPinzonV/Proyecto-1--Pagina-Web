@@ -97,6 +97,7 @@ products.forEach(async (product)=>{
   .then((userCredential) => {
     // Signed in 
     const user = userCredential.user;
+    window.location.href="index.html"
     // ...
   })
   .catch((error) => {
@@ -105,19 +106,20 @@ products.forEach(async (product)=>{
   });
  }
 
- /*
+ 
 export function logOut(){
     signOut(auth).then(() => {
         console.log('cerro sesion');
       }).catch((error) => {
         console.log('no cerro sesion');
       });
-}*/
+}
 
  export function validateUser(userSigned){
     if(userSigned){
-        
+
     }else{
+
     }
     }
 

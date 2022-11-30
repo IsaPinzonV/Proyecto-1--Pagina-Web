@@ -15,6 +15,9 @@
   font-weight: 220;
   padding: 3%;
 }
+button#btn-user {
+  margin: 10px;
+}
 
 #account .navbar-item {
   font-family: "Poppins", sans-serif;

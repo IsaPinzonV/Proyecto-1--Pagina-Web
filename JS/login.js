@@ -29,16 +29,3 @@ function formlogIn(){
   const password = document.getElementById('password-login').value
 logIn(email,password)
 }
-
-const btnSignOut = document.getElementById("Sign-out"); 
-btnSignOut.addEventListener('click' ,(e)=> { e.preventDefault()
-  btnLogOut();
-  console.log('hola')
-  });
-
-  /*
-  function btnLogOut(){
-  if (account === "SIGN OUT") {
-    logOut();
-  } 
- }*/

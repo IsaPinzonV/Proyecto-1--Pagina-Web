@@ -16,6 +16,10 @@
   padding: 3%;
 }
 
+button#btn-user {
+  margin: 13px;
+}
+
 #account .navbar-item {
   font-family: "Poppins", sans-serif;
   color: rgb(0, 0, 0);

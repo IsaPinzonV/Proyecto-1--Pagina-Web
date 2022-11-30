@@ -21,6 +21,9 @@
     padding: 3%;
   }
   
+  button#btn-user {
+    margin: 10px;
+  }
   
   .buttons-mobile {
       display: none;

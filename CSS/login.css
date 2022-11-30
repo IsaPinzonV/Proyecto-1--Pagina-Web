@@ -27,6 +27,10 @@
     font-weight: 220;
   }
   
+  button#btn-user {
+    margin: 10px;
+  }
+  
   .buttons-mobile {
     display: none;
   }
