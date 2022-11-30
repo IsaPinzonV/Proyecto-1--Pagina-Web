@@ -1,4 +1,4 @@
-import { authe, logOut, validateUser } from "../utils/firebase.js";
+import { authe, logOut} from "../utils/firebase.js";
 import {    onAuthStateChanged
 } from "https://www.gstatic.com/firebasejs/9.11.0/firebase-auth.js";
 
@@ -9,12 +9,14 @@ onAuthStateChanged(authe, (user) => {
  const btnUser = document.getElementById('btn-user');
  if (userActual){
  btnUser.innerHTML="LOG OUT"
+ btnCreateProd.innerHTML="CREATE NEW PRODUCT"
      btnUser.addEventListener('click' ,(e)=> { e.preventDefault()
        console.log('user')
        logOut()
        });
  } else {
      btnUser.innerHTML = "LOGIN/ SIGN UP"
+     btnCreateProd.innerHTML = "SALE POINTS"
      btnUser.addEventListener('click' ,(e)=> { e.preventDefault()
          window.location.href = "login.html"
          });
@@ -31,4 +33,7 @@ if (userActual) {
 }
 });
 
- 
+const btnCreateProd = document.getElementById('btn-admi');
+btnCreateProd.addEventListener('click' ,(e)=> { e.preventDefault()
+    window.location.href="newproduct.html"
+});

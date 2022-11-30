@@ -4,6 +4,8 @@ import {
     collection,
     addDoc,
     getDocs,
+    setDoc,
+    doc
 } from "https://www.gstatic.com/firebasejs/9.11.0/firebase-firestore.js";
 import {
     getAuth,
@@ -32,26 +34,32 @@ const firebaseConfig = {
  const auth = getAuth(app);
 
  export const authe = auth;
+ export default db;
 
  export async function addUser(first,last,email,password){
-    try {
-        const docRef = await addDoc(collection(db, "users"), {
-          first,
-          last,
-          email,
-          password,
-          admin: false
-        });
-        console.log("Document written with ID: ", docRef.id);
-      } catch (e) {
-        console.error("Error adding document: ", e);
-      }
+    
 
       createUserWithEmailAndPassword(auth, email, password)
-      .then((userCredential) => {
+      .then(async (userCredential) => {
         // Signed in 
         const user = userCredential.user;
         console.log(user);
+        try {
+            const docRef = await setDoc(doc(db, "users", user.uid), {
+              first,
+              last,
+              email,
+              password,
+              admin: false
+            });
+            window.location.href="index.html"
+            console.log("Document written with ID: ", docRef.id);
+
+            
+            
+          } catch (e) {
+            console.error("Error adding document: ", e);
+          }
         // ...
       })
       .catch((error) => {
@@ -61,6 +69,7 @@ const firebaseConfig = {
       });
  }
 
+// MdH5YZJnoBfcOWbnMCOgLWVg47J2
 
  export async function newProduct(nameprod,description,price,essence,collect,intensity,type){
     try {

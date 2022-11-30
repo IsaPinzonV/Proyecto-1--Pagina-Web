@@ -1,4 +1,4 @@
-import { addProducts } from "../utils/firebase.js";
+
 
 const products = [
   {
@@ -233,7 +233,6 @@ const products = [
     type: "Bundel"
   },
 ];
-
 
 const filter_collection = document.getElementById("filter_collection"); 
 const filter_essence = document.getElementById("filter_essence"); 

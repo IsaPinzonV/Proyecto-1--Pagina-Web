@@ -24,6 +24,11 @@
   button#btn-user {
     margin: 10px;
   }
+
+  button#btn-admi {
+    padding-top: 33px;
+    font-weight: 300;
+}
   
   .buttons-mobile {
       display: none;

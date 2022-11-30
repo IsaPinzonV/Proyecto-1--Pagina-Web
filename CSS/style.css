@@ -20,6 +20,11 @@ button#btn-user {
   margin: 13px;
 }
 
+button#btn-admi {
+  padding-top: 33px;
+   font-weight: 300;
+}
+
 #account .navbar-item {
   font-family: "Poppins", sans-serif;
   color: rgb(0, 0, 0);

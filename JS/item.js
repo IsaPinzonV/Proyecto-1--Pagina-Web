@@ -1,12 +1,21 @@
-
+import db from "../utils/firebase.js";
+import {
+    collection,
+    getDocs,
+} from "https://www.gstatic.com/firebasejs/9.11.0/firebase-firestore.js";
 
 let productId;
 
 const url = window.location.search;
     const searchParas = new URLSearchParams(url);
     productId = searchParas.get("id").replace('"', "");
+let allproducts = []
+    const products = await getDocs(collection(db, "new products"));
+    products.forEach(doc => {
+        allproducts.push(doc.data())
+    });
 
-    const productDetail = products.find((object) => object.id == productId)    
+    const productDetail = allproducts.find((object) => object.id == productId)    
 
     let productosItem= document.getElementById("productos");
     
